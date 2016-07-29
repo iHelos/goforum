@@ -5,7 +5,7 @@ import (
 	"net/http"
 	//"./database"
 	//"./handlers/forumuser"
-	"./handlers/common"
+	"github.com/iHelos/goforum/handlers/common"
 )
 
 const prefix = "/db/api/"

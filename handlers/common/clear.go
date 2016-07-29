@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	//"database/sql"
-	"./../../database"
+	"github.com/iHelos/goforum/database"
 	_ "github.com/bmizerany/pq"
 )
 
