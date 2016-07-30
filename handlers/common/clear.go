@@ -14,7 +14,16 @@ const (
 	UriClear = "clear"
 )
 
-func Clear() (interface{}, int){
+func ClearHandler(w http.ResponseWriter, r *http.Request) {
+	body, status := clear()
+	answer, err := handlers.MakeAnswer(status, body)
+	if err != nil{
+		log.Print(err)
+	}
+	handlers.WriteAnswer(w, answer)
+}
+
+func clear() (interface{}, int){
 	db := database.GetDB()
 	txn, err := db.Begin()
 	if err != nil {
@@ -38,15 +47,6 @@ func Clear() (interface{}, int){
 	}
 	txn.Commit()
 	return "OK", handlers.StatusOK
-}
-
-func ClearHandler(w http.ResponseWriter, r *http.Request) {
-	body, status := Clear()
-	answer, err := handlers.MakeAnswer(status, body)
-	if err != nil{
-		log.Print(err)
-	}
-	handlers.WriteAnswer(w, answer)
 }
 
 func clearTable(tr *sql.Tx, table database.Tablename) error{
