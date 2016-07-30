@@ -10,7 +10,7 @@ var db *sql.DB
 
 func init() {
 	var err error
-	db, err = sql.Open("postgres", "user=ihelos dbname=goforum sslmode=disable")
+	db, err = sql.Open("postgres", "user=ihelos dbname=goforum password=P1rate sslmode=disable")
 	if err != nil {
 		panic(err)
 	}
