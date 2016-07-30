@@ -20,6 +20,7 @@ const (
 	User_name Rowname = "name"
 	User_username Rowname = "username"
 	User_email Rowname = "email"
+	User_about Rowname = "about"
 	User_isAnonymous Rowname = "isanonymous"
 )
 

@@ -19,9 +19,9 @@
       <root url="file://$PROJECT_DIR$" />
       <root url="file://$PROJECT_DIR$/../../../golang.org/x/tools/go/pointer/testdata" />
       <root url="file://$PROJECT_DIR$/.git" />
-      <root url="file://$PROJECT_DIR$/../../bmizerany/pq/.git" />
       <root url="file://$PROJECT_DIR$/../../../golang.org/x/tools/go/gcimporter15/testdata" />
       <root url="file://$PROJECT_DIR$/../../../golang.org/x/tools/cmd/cover/testdata" />
+      <root url="file://$PROJECT_DIR$/../../lib/pq/.git" />
       <root url="file://$PROJECT_DIR$/../../../golang.org/x/tools/refactor/eg/testdata" />
       <root url="file://$PROJECT_DIR$/.idea" />
       <root url="file://$PROJECT_DIR$/../../../golang.org/x/tools/cmd/stringer/testdata" />

@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"github.com/iHelos/goforum/database"
 //	"github.com/iHelos/goforum/helper"
-	_ "github.com/bmizerany/pq"
+	_ "github.com/lib/pq"
 	"log"
 	"github.com/iHelos/goforum/handlers"
 )
