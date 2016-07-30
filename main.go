@@ -12,6 +12,7 @@ const prefix = "/db/api/"
 
 func main() {
 	http.HandleFunc(prefix + common.UriClear, common.ClearHandler)
+	http.HandleFunc(prefix + common.UriStatus, common.StatusHandler)
 
 	http.ListenAndServe(":8032", nil)
 

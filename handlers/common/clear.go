@@ -30,7 +30,7 @@ func clear() (interface{}, int){
 		database.TableFollow,
 		database.TableUser,
 		database.TablePost,
-		database.TableThread,
+		database.TableForum,
 		database.TableThread,
 	}
 	for _, table := range allTables{
