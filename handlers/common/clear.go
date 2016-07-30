@@ -16,11 +16,7 @@ const (
 
 func ClearHandler(w http.ResponseWriter, r *http.Request) {
 	body, status := clear()
-	answer, err := handlers.MakeAnswer(status, body)
-	if err != nil{
-		log.Print(err)
-	}
-	handlers.WriteAnswer(w, answer)
+	handlers.WriteAnswer(w, body, status)
 }
 
 func clear() (interface{}, int){
